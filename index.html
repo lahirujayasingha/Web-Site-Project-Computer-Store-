@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Computer Accessories Destination in Sri Lanka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div id="cart-indicator">
+                🛒 Cart: <span id="cart-count">0</span> items ($<span id="cart-total">0.00</span>)
+            </div>
+
+            
+        </nav>
+    </header>
+    <!-- Search Bar Section -->
+    <section id="search">
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search for products..." />
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    
+    
+    <div id="sidebar">
+        <button>Lap Tops</button>
+        <button>Monitors and Accessories</button>
+        <button>Os and Software</button>
+        <button>Processors</button>
+        <button>Motherboards</button>
+        <button>Memory(RAM)</button>
+        <button>Cooling and Lighting</button>
+        <button>Cable and Connectors</button>
+        <button>Graphic Cards</button>
+        <button>Power supply</button>
+        <button>Graphics Tablet</button>
+    </div>
+
+    <section id="home">
+        <div>
+            <h1>Welcome to PC Powerhouse</h1>
+            <p>Your one-stop shop for high-quality computer accessories in Sri Lanka.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At PC Powerhouse, we offer a wide range of computer accessories to enhance your computing experience. With years of experience and a dedicated team, we strive to provide the best products and services in Sri Lanka.</p>
+        
+        <div class="history">
+            <h3>Our History</h3>
+            <p>Founded in 2010, PC Powerhouse has been a pioneer in providing top-notch computer accessories to tech enthusiasts and professionals across Sri Lanka. Our mission is to deliver cutting-edge products and unparalleled customer service.</p>
+        </div>
+        <div class="team">
+            <h3>Meet Our Team</h3>
+            <div class="team-member">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABrVBMVEVdwNX////u7+//ygATTGDt7u4YYn3/RF/5+fnzmhD09fX29/fb3d3x8vL8/PzXN04yb4MOSFxfw9j/0gAAOV+xqjhTvdP/zgAVVWxRrsQARGAMSmH/P1sUXnk1eY9Mu9L/3AAGQFgANV/+TGXR7PLu+Po3WFbkyR/8lwDY5eQ5gpYAOlVSwNyDzN30fow2eIqx3+mh1OBeaFH61RQAMU7mub7wlJ6y1t5yyNqo2+YuaX5Ys8YAPF5Km6/Z7fJHjqHwySLJsy+qxJrOxnHvngCLu6Ccy9bFfZLDcIXG2+AQUm6AxNNOYFRxd1CQkUWFiUmfnUAfTFnYwSeunz9OaVXItzFmek4qU1pbZlOglEL/4gDWsyctk7VsrqiNh0V0gEy0r1PlxEVsbExSbVPOwV22w4y+sjKAspyEwru9vHbkwDWetIC7xYhltrv6twn4sQvzoivsqka+1rv23LnorGblqR+9yMzqv2yXq7T07dTpyJHj37bktkv1y5Ht7dKEsr9ugpHUR1riDDf8y9Dy3+HnnKTrfInhQVdjkZ99jpf4ZXj6nKaYucRNaHi5n62EPGKfAAAVJklEQVR4nO2di38bt33Aj5SOvpDiWTwpJz5M0VTJ2BLFiYxli5JIynYdbZLrpHGSpZmXdWmapc1qu11TJ2m35eU8mi77m3cPAAcccI8fcKTkz/xTHFvH4wHf+wH4/fD6QcthMfW8L7pBruWxlMmlErnNJNfIpSK5VMbf1MklI4MESvAEtOeEzwmfEz4nfE74nDAjQh1OqHMZyCIBipBPIILQxGKUsZTItSK+VCSXSuQ2I9U3y4IEDP62WSVQLms6luAtFsk16v1jod8ikjz1FrFQ7186gTwwgaAE0QlogppQjCthgppAZyBVEZ5NAnkqgXyQgJCQ+jyDDOh6RAZYHT67hMVSkDItTlWiPnmWCdPJM0boNBdQQrfdekYI9bzbfkP53CRyZZfy3BOWo7Rnmvlpxxe9a4jvyZWMcvaEmdpDnqvbnU73hn3LES0Q99f+cDCddrvR3wUb3Ah7aGApFbGUyDXBpeA2g72tlAuLPhgej7SWbduaSJzrLW003O/wbW1JlEBiPsQECX4pupbkNuqOo8Rk0VFc37aj2EKctt0/mbKYZplVk6CO4KzF+6W6nk3fwmAqX3EwtFKwsZx3hwPmIca56j1RYnaGrRaMjkC2RidTcTt1fgiLwz5QeSFKqz8QtbPnhLDb6ctpj4Vs9TvcuzsPhGZ5f6SO5zNq/WGI8RwQTo8zUB8NOWQM5ZkQ6nlCaHZGWpZ8HqPVpxiJ1VIkxELbQ87hKWHfhgA61S9jPF9awynJG0k1IOQdL0NA4NhDoiaBVxd4Sya5FHZdpnezVh8R2x6GnTqD5COoIwkECqMY3q2D2egPM1qsGyAzTKLQt3Cu7itZv1SMrSmV4Jx7T7nujCpgSPoU41wJzfnwOdLaIzhzICSNj2Mh5ib2CCdLWpqZEZKb9ufH5zEOcMKo1zQrQnzPtD/rFoaTIU7bR5Qg1JOtBXnqdF41kBLb6tCIAGtBZjNEcyMmNcMRdOOHc1egz7iHEcOTLxwBPW0D9tpyRekSahGR+35rGOQC4LWFq1qS5z2V6SR5UHaNCLoCf84c+hYdGTprsrV+cNBs1D1pNOoHB+tbW4cS2hyRjMyKcADGq00KjXavXam024tEnN8qzsXm0eQQCrk5G0J8CehnW9pkueHQLYrFpa6uT2CMdiec3UwIUdM8BAFah0eNXhRdgNkrwBix8TczJEQXzH0IoKUdVSO1xzK2DyYahJHVYgaEuoQGLcvRXxo8pMfqBICIDWMJTBhhD9Gv+wArYR0up9NfoMcjgBpxXSynsoelRPFVCCmiVq3XTqYKqbFgA9SI6mJy5kullLNruQFEgxMon8d4KqFFX03xs2u8URf1LSCG3jpKXwNpaVcPAVrcDAhxdlV6TyDALTlAR4sNSEEtZ0lYBPTnrUmyDYxEbALqwsjMjrBrpU/YmtRl+Rxpb6UntPtmZoSg7lJVWoOu9AB2EZtFFUL/JUE6vNa6TDNKSaOWHrF14uXPlCZEvsw0PZ9rCNUAF9vrgMbG8gf98ZQ+eLVJGVVCAOGhWhl1pQ5Qon3XRIhx9jB6/alfBCCV0DpSLKOeEgFv1EbjGrEraAm3yPMG9ggtmDMqlt4hIEWNntWQ6VvkdEgzam2pqxBYEzXbVCMElVFNW+ZV2Gg06uPxqlDG47HzMfeNJiRJe1+NcA+kwhqnwvrqSz+7d+/V114Uyqs/v3fv5dfHYRehDekr0j64BGEXpEGunalv/PLFK9dW4uX+rZc2WMbKEWjgxlIhhA1uW3W2xG3cu3l5ZSFRVi7ffJ/5ZqMOSZW0pzKEm6CUtEPG2tfrb1xLwefK2sobqzRiDzjA2JUlNGEJsb2mxuv/lpLPlcu3xhQixDl1pZ+SMFjmgAdHYcP31jrdko5fBQA6RfWNMdXUgOyFRowiR+ATCrw2/18l6Ij7AV1G37y8BiFcWLkXNDeVZWDSfj/KEI/DiDxvU0aFWo1uEesPYIALa29RSjyApazZficjfd/CE0iXwhWLJmz86hoM0KmKbwbfP60BEx+FVvqlIoROgzL2fvUtUC10ZeXBalACAP0LT8jkKYDQgE5k00OIlY1rwELqyJXXG9KEYSWmIewDk2A8mvo/XgYD0m0NzG9zBdVEAGEXvFqGIXxVhvC1sTwhsYmpCSGTFIiQGqFZvQUvpAsr91cVCFuDaEJ3r5H7hyGEz9VTncPG2/fhgA7ihgIhq8QiYvIIQ/tM/KUAUFvoEi4HhC9dkSIcVxQIW753ym+oCc+ueVbTBLczDuFBQPgLsDV05TJxv2UIURcjebWJ1+p24YB0S9N4WYZwTY1QG3nFz/O+Y/sWvqmQWTKjSkjpENq58AR19svxhGj1qMyiJ8riKxPCLb6Xg1SEXiHtSBHWsquHkKH9QFomNhQxhL7FkFqZRw3oS7all1dRW9oGjbYRQcNuehyhX0hB4/iB1E6VrQV+ALT3hMTvJpb0OELPVsiuHj1QJcSlFNzHxzJNIkQrEySMoSuB2yZHuEZ8mh5sOJGIv1rKCNtDZv2pd1HyBXojUW0VHSLCyq5cBrDnFloDzK+Chq+vxLI7vvILt6DV5XR40yes19uyGbCx5uL3zEj4pL5Yq+/808tuH6/Sk+lbIML6O6/JVsNghD+29yTjkyLCrStoKGKsQNh468E/SxPupyGE933J819ZWLjmjewqEDbevrbwrnQOjo00hNI7DbYdwpV/qasRjn95eeH2tmwW8AB/LCG8d08IHa61F12z3XtLmnD11ooCId7oFksoXQ217QcO4bW3G7L2cG3DL6QKhHj9cCyh/Iat7X91NLfy87GKPRy/c1mFEI9lxK02gQ5104SvuJq4vyHt0zgFvH1/TYnQwvaQmrcg/o1hqNl7TfuNp4l79cbP5PoWG436mysLC+/JA2qa53iWxaMYPqG0vXfEfs9Vxa1641cSw6UO4fv1sdPOLPxahdCz+WaE5+15paC1CSHxiunCyvsbsLlDQvjahjeho8CHne8YQnmPxkP8wFXigw3I9G8ga7fG7oTObaXQIfsxhD6mrMOEEd3m9P6ahDlccL+4otTMuOL1gqlIXBwheMopjPihqwwpPu+LN1V3F49CMQo4wrLq7tDt92TxPERFDZIFmdGEU+Xtoe9Ka9CV36gm30oilPdKsTxUAXwPtC4xJSGJ++VdUDGHvmz/VoHwt6qFVLO9fRgmhjKLRY3yb3Jy4/khwg8UCB+qpo4MonC1idI4G4N4U5ZvTcmbQYSeQTRF4zTZEd6WVuGHGQTSmgOh9vAjScCPlNsZ4tTMlnD73+UA19RroYZ7iLMl1LblADOohRoijNahmuONxX5FClHZ2nsyitdhNoR+RxEoK+q20BOekLGHGRHKlNOPMgonguohZQ8ZnyYzQnBjczOTZkbDhMIIrVkSatu/AxJ+kE0ZDS//yuX1kOedFaG2/WtIHyOrSsjuMBH2LTIj1B5CRvZ/mhUgr8PZEW4/TL8Q+qfZBS2aow4BiBlqMJlQvQdMyWG6ruLvMkwyvJSWJ1TvAdOSpjd8U3lohhF7OldCR41J/YyPtEwBtVYSIWhHZSq5HVMZ1xZuZ9BhYiQ8TsNFaFUeTeSTvPpoTThC7Fx99G62CnTFI4yZP1QdEealdfWFO49X+GH+lYXHd16QnrGPFH9EOGa1iZF5kg6hK48euUoj8ujRHefinVcyT65vJujQzDxmJyJ0cO7cefRoxSF9/PjxHXQpc0K0Fjpulltldk0ohFAgdz7MODE8kR9HmLW5mDMhigMWR6gyyy2UWMLs62E3kXCqNoHIy/Z8Cc1oQl15tYlIbLsWR/huptH4tWC1SUSEVu/DrHoXblzLUX+QH/w+mvAP/6Gf9PsjTTagKSdoxDsyQqv3Vxa9CzdsZ+1oa92r9sU/fixU49U//dHf+/DkYOtIJtKnQHyvtBi5Z0ZplXeAp9Vqk9N2u1LZfYKT+eROmO/3H/8FJ/xpr91uN04ntZoypO01NKXIdd4eoeRKfURnWYdb64VG2wvj0v6UPPyzT65Sirz6wp8/Ix/lvA1TbqTPwo4bzlQl/buleELfq5GviJY22TqtNgtVvH2pQO9d/csfMN/Hn+RoIVvWms3q6elRDRQHkxE88RS9Vt/LkKTNd7S3ftBsFhzBuxIqu8ypOMZnf3IB//Mzds9uZxffX3W/3Gyur4MD02LCQSpCKZvvqK956uEViAoXF3dDQwq57p//679Dl3Kfk702Ff8BzWZzR65K2ggqekeJbxLhz7asyTLCowEXdz8P0ZR/uBHaFJ/LfREQLuJnNJvLkBiKRBIJ0d48MODhTpMA0oTtH73SSTR4/cuLF7+6jn81vP+6P1LhNKrkKc1TSEBTX/xRKDM2QqvXFEG3rlmTQsBXaC5ShAf0mMLXDp8rXz5FCXr/P2FivtAPKoDjDqBdQXERWr1PgDtIra3gzbOAi4v1oCIa33x1EclX31LgT9gYdvSjmtAoLt47M1NEaAWFETxcp947U0bdiohtfu7plxcp+e5rklgoDCH7MEjsNirYUGJsE4C9sLTqKZ2nQpNBbH+PHnnjq4uMBLWxR0cXqlSZhxWqB4DKSA2zJUUcMFMTWrVqu1kI5YrO8divDJtfXgzJN0t+s7a5S7+R0KMKzR4gLu0ol5owd5wS0arVK4thQpqxset6gktLS9dDOvymu7Tkml8jsIbYHDKElXY1rRbp8fxEwpQL9q1Jzw0gx+Ur8GoWe5/n8g7g0tNvGcBvu+7FpWJ56a9BNRQ8yGm32qcptUivLE0kTOebWhNHg2JCgtj7QvdYlrrXacK/2/SvLm0GYfpEz3Fb5rRapCcOkyN/pBlxs/zoZQ0RILEZlR8RS/fChe8w308uEcITsnm4GvmcdDGiW2UQYS65k2hN/FilQsKgJtafIMKfEMTvLgSElDUUIfpvKhXiKBdFKLCHuTQ9fRKMVVx9sIwpwgsXfMCAUKcaGtGrQg9qHyQTdhhCcYTWvDew4cc6S+4H41Am0a8eNTV+Rdz0CC94gBRhgQq9FPOqksO2jlBAM8SAoXKCCK16qqgDQayWUz5fQVPq9oLLNKEvhHDaCNzusLX3hMQCSdjejUJh4YMg46MK+gNSxVhCOtwOny3a5jd2NwWEP6BqeMy4bAIlEvykYCAGg5BAWEpUIh2bTfDm6VxXdvdFhE99wk8Zt1vwKOLSVRpxrQ1SIT57JikyZHIMaLvdiMkW273o/ZUnvHDpa78afsEGrY11j+JifloeEjT2ZbQSqYBJIkK2e9H+fjOScOmUuTWWMC7SAlIhlLAYCcic7sARsip0bjiJJtwN3Rv7rOiq6IcXgscvjbCJobMBOEJWhU7GnggIr4etYYqHVRpR7huyhWDCqJpYqMRmKhzcefdT1yI+vSAg5AKccw9jinF7OUKFuXSEfHxT4YBN+IiVcKaa4YjX7SOHcPNvlwSEfIz6uM5mVDkli4TSR2gtopFTUReDOxsgTBgupIuN03wE4YCL5Z1AWBEFkEKDFyXgOTPlKCX2TyvxeeIQG/VOBOGn3EEKSZW6Iiqnfh3LA09/0COOtuBOyeEGMbi2dLH3P2JC/Xsuwnn4WXyzxSkRBUx0jwsHnm/hNzbhGeFDrmAJLH5Iy67N37zBE24ehG4UdKa5AlEVl1HvdDEYIfLdQjsuBWcDcJnistVen3KEP7huwG6YMPFR7kk0rBLRAFsZTohbXMYoWrWwiXb6DsnZGvM6vKEzvV9PKike5TQ2zFo/FHPHtxPgU1j88s2U0wLXvIsIC6F7ese6gJCrhqLeE0e42N6hlGgPTdzMSBAi80E5b6LTxkQvPtzYOBYxRHjhUndJ/zH0tKihqJDQnYwRcjD1OEKxPfSEi+vdaFfC0m4iKTQLTSIN9p6qrt+4xEp36eRU/CBaClUuwQodkW/K5DfCHlLTMljIFf92PPBmTQ6WednZ2tlZX1/fYmWdkuX1nb29//37f2B+BnvHO84n5Jb15dATdtzH7uwIUjzANbEVPkGPJyjxEVrZ+Kb+B/h83LhetoV+8K8WOhDXn8u1bdvyfnzx/vaeR24JfT+N2EM2n1LnAfv/UlqeMTOx+10qjz4hT5B4Sqf/T4WwPDMUBKh4DilqfjJfdaouqEdh6IqEuIWFnnQ8e0FdprLyWbIY8YzOU48S3IwWdfXTcvFZuerRFrIUtLvJPVMug/OAzx8i3r7l+TIZnAd8/rSIAM18ENDDJxTaQyZCqy90fNPgFL1zg0g24JHj8WIJ+Ait7BpiRvqZ76iRkPAOw2BnOu2XpulbCAiz36sgIWHAbM4DJtGzzhwRr7igwnllRIibm7M2/XhsVM+eEBuNzTPUoo1XlJj5WRDiZ8qH4VUGHBLAmRAS02+OzqZJbQ3NIDOKhLy18AjJU/fOpMOIq2CZyUsyYcw4jU4TMvd0tHnXRns0ZXNHEWKJGKcJQwi8tvBimxz4CFZ1GYQygE85TuG1sQXR02zI82aLMJYTe36Mtjbl0i/nuaok3bdgCUv40+7x3BqcfZymERTEGRKSj83OaB5qtEebAVVpLoTE+OdKsx+/sVt7VG70+RDS7XI3w2AoIj57SFKmZsTmQEi1rZ0Z2v9Wn6w4NP3+/NwIHTGIQercnVFZ7QctKMr8DAjxWjeO0KmNwZNPtMz1aLf6U5PPB0XIO14RhAYV+Is5RY+5VAwmPahLQRam/Uy9HNum9GcaRjlV1gzhJZjXpuvsWwwQzWk/KxfAtu1jysKX83RxIflI77UJqlpU34KvCToVwT5nDPoZbD63W8cDagum4ZVGQUGcSe9JVNf1MpWd7nSoKZVW57tDqvrlyqi2nSVhSI+OozMcSWrSbo32mfXoBmlNzpaQzoCvye5wpAErpW2PRv1uOFK1ziVwPghd6XT2+q2UurQd5Q0GXf4hggTOD6H7FWM66PdHlh2pTne+e9Tvn+iU2XmWCNFN087eXr9vtxyxW94sfsuXfn+v05nyHc/MCVXsIRI6A8UIfeRMp13UO4PBYGmpXC6J73H0XqQSyIsSgNtDFZ9G+M0IwlRipkkgZT74CK0wv1RYTqi3aMJAqfcSmwDcL4WP06QkLOeL5eC3eCk5BThlAvPsPSURuqO27qhXaPlRSAyvMqdP4DwR4ktUa1V2l2MZTpMjn8A5JGQygFpGhQTOO6F6As8J/98T8qP+gnmLUjqvQjCtIEpA4FGV+G8Gtwk8qsR5C8FbjJpdi3qLSm7jzBM4G8J5JvB/V3tH6N1CpVIAAAAASUVORK5CYII=" alt="John Doe">
+                <h4>Mr.Athula samarasingha </h4>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJwy5RvIu7q4ggwqwpIMWirfinieXxkh22X6zfi9t-jjtoCmlLm9wDPLpFqG5ytIRS_rQ&usqp=CAU" alt="Jane Smith">
+                <h4>Mr.Prebath rathnayaka.</h4>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJwy5RvIu7q4ggwqwpIMWirfinieXxkh22X6zfi9t-jjtoCmlLm9wDPLpFqG5ytIRS_rQ&usqp=CAU" alt="Jane Smith">
+                <h4>Mr.kasun </h4>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sfMcmZ6v_LrYQtScVAwQqaqfDlNDzDZgwQ&usqp=CAU" alt="Jane Smith">
+                <h4>Mrs.Nethmi</h4>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sfMcmZ6v_LrYQtScVAwQqaqfDlNDzDZgwQ&usqp=CAU" alt="Jane Smith">
+                <h4>Mrs.Akeshi</h4>
+                <p>Product Manager</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="products">
+        
+        <h2>Our Products</h2>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC80MTA4YWNmNTM2OTc0NTg2NGUxODNmYmYyY2ViMTczZi5qcGc=_400x400q75.png_.webp" alt="Gaming Mouse">
+            <h3>Gaming Mouse</h3>
+            <p>T-WOLF M1 Gaming Mouse + Gaming Mouse Pad Combo
+            </p>
+            <p>Rs:3500.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC9iODM4NzAwYmVhYzg4ZWRmOGIyNTFhOWYyNDdmNjkyMC5wbmc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Gaming Mouse</h3>
+            <p>Fantech cruiser wg11 wireless gaming Mouse white colour mouse Bluetooth Mouse</p>
+            <p>Rs:2000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC9hMTg3NjRhNTVhZDdlMzFmY2VkZDhiMmM5MTFlMzczNi5wbmc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Mechanical Keyboard</h3>
+            <p>RGB Gamming Keyboard LDK.ai R260 Suspension 7 Colorful Backlit 104 Keys USB Wired Gaming Keyboard</p>
+            <p>Rs:3800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC9jYjhhNWMyZjJkMDk0YmU0ODE5Mjg5YzQ0MGVjNjAxMi5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Mechanical Keyboard</h3>
+            <p>T-WOLF TF200 mechanical feel Gaming Keyboard USB Ergonomic Mouse Keyboard for PC Laptop Gaming</p>
+            <p>Rs:2800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC9lN2YzNjljMjM3ZmE2OGYzMjZmNTc4Y2NmN2U4ZDFhMC5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>VGA card</h3>
+            <p>GEFORCE GTX 1650 4GB GDDR5 Graphics Card | 1650 VGA card | GTX 1650 | Gaming |</p>
+            <p>48,000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9say1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzE4OWNiYmY5NjVmODRmOWRhMDliMWY4YzhkMDhlZTFmRS5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Graphic card Holder</h3>
+            <p>ROG Graphic card Holder VGA Bracket Gaming RGB GPU holder ARGB Aura Sync</p>
+            <p>Rs:2800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC83ZWMyMTg0NDIwZWNhNGE5ZGE2MjNkMTJjZDNkMGQ0Mi5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>computer speakers</h3>
+            <p>Kisonli T-008A Gaming High Quality Bass Speaker</p>
+            <p>Rs:3000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC83YjRjZGQwMGI2YTk1ZjYxZTRlNThmZDRlMDM5OWY5Zi5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>computer speakers</h3>
+            <p>Jedel RGB gaming USB computer speakers</p>
+            <p>Rs:2000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9say1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzRjMWMxZGZmOWQ2NjQ4MTBhYmM0NTViNDYxNTM1N2Qxei5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Ram Cad</h3>
+            <p>Kllisre DDR3 DDR4 8GB 4GB 16GB Laptop Ram 1333 1600 2400 2666 3200 DDR3L 204pin Sodimm Notebook Memory</p>
+            <p>Rs:1900.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9say1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzg4YTU2MzgyMTYwYjRjY2NiYzZjOWYxZGViZTczN2Q4NC5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Ram Cad</h3>
+            <p>PUSKILL Memoria Ram Notebook DDR4 DDR3L 16GB 8GB 4GB 32GB 3200 2666 2400 1600 1333 Sodimm Laptop Memory</p>
+            <p>Rs:1800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC8zZDFjYjA5OGRhODc4Yzc0MzU4NjNhN2ZhYjIxY2U1Ni5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Gaming Cooler</h3>
+            <p>Manmu Big Promotion 120mm PC Case Fan RGB LED Computer Air Cooling Fans 4pin Gaming Cooler</p>
+            <p>Rs:4100.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC80NzZmNjRkMTA4YjNhZGJmMmRmMjBhNmViZmM5MDM5NS5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Gaming Cooler</h3>
+            <p>Aigo CPU Cooler 2 4 Heat Pipes PC Radiator Cooling 3PIN PWM Silent Rgb Fan For Intel 1700 1150 1155 1156 1366 AM2/AM3/AM4 AMD</p>
+            <p>Rs:3800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC83ZmQ2ZjE0YjAxMzRjZWJiNDAwMDEyNzAyOTg4MDZkNC5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Processor</h3>
+            <p>i7 3rd Generation (3770) i7 3rd gen Processor with 1 year warranty</p>
+            <p>Rs:1600.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9say1saXZlLTIxLnNsYXRpYy5uZXQva2YvU2JjOTVhOWQwNTYzYzRlODRhZDE3MTU4Mjc5ZGE5OTVjMC5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Processor</h3>
+            <p>i7 3rd gen processor</p>
+            <p>Rs:21000.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC9kMzkyNzViODBjNzg5ZjI0YmFiYjkyY2UyNjVmNTJlYi5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Power Cables</h3>
+            <p>Power Cable For Computer Monitor/CPU 3 Pin</p>
+            <p>Rs:1300.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoubGsvcC9mYzRjZmNhMDUxY2U4NTQ5YmQwZWNhYTIwMDdhOThmZC5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Power Cables</h3>
+            <p>Laptop Power Cable Laptop Power Code 3 PIN Fused</p>
+            <p>Rs:1800.00</p>
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9say1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzllN2I2NDAyNjU5ZDQyOTI4ZTQxYWIwYTZjNjk5ZGZhTi5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Motherboard</h3>
+            <p>MACHINIST X99 Motherboard kit with Intel Xeon E5 2680 V3 CPU + DDR4 8GBx2 2133MHz Dual-Channel RAM Set Computer Combo X99 PR9
+                <p>Rs:12000.00</p>
+            </p>
+
+        </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9say1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzA2MmY5Y2ZiZmNkNzQxNDRiMzljM2E3ZjhjYTI4Y2I3TS5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Motherboard</h3>
+             <p>MACHINIST H61 Motherboard LGA 1155 DDR3 RAM Compatible With Intel Core CPUs 2nd And 3rd Generations Supports M.2 NVME SDD</p>
+             <p>Rs:8000.00</p>
+            </div>
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9say1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzNiYjA1NGY5MDYyMDRkNDlhMjAwZjY0MzU5YjVjN2I2Mi5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Monitor</h3>
+            <p>Falcon 19 Inch LED PC Monitor Brand New, PC Screen 1366x768 with HDMI&VGA Interface, 60Hz, Wide Viewing Angle 170°, LED Monitor Brand New Monitor [2 YEARS WARRANTY]</p>
+            <p>Rs:28000.00</p>
+        </div>
+    
+        <div class="product-item">
+            <img src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9say1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzI4ODY1ZGZiN2M1NDRjZDM4ZWUwZGFkNjE0NmFkYjUwTy5qcGc=_400x400q75.png_.webp" alt="Mechanical Keyboard">
+            <h3>Monitor</h3>
+            <p>MSI PRO MP251 24.5" INCH 100HZ 1MS FHD ULTRA SLIM FRAMELESS MONITOR</p>
+            <p>Rs:55000.00</p>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="https://cdn.pixabay.com/photo/2015/11/03/08/56/service-1019821_640.jpg" alt="Technical Support">
+            <h3>Technical Support</h3>
+            <p>Expert technical support to help you with any issues related to your computer accessories.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://cdn.pixabay.com/photo/2015/11/03/08/56/service-1019821_640.jpg" alt="Product Installation">
+            <h3>Product Installation</h3>
+            <p>Professional installation services for all our products to ensure optimal performance.</p>
+        </div>
+        <!-- Add more services as needed -->
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-item">
+            <p>"This shop provided me with excellent products and support. Their customer service is top-notch!"</p>
+            <h4>- Ramesh K.</h4>
+        </div>
+        <div class="testimonial-item">
+            <p>"The best place to buy computer accessories in Sri Lanka. Highly recommend their products."</p>
+            <h4>- Anjali S.</h4>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="your-email-script.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; PC Powerhouse. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEU7V53///81U5vy9PhQZ6XP1ORUaqczUZp4ibclSJb4+fybpsjAxttFX6F9jbowT5np7PNqfK8cQ5QVP5JZb6q3v9evuNKkrs1vgbPh5O7a3+vU2efHzeBAW5+Fk72MmsFkd65ArN81AAADTklEQVR4nO3d25KiMBSF4RjUGE5RUBFHwPd/yrG65qKnZ+gAbdgLav33VOUr5ZTEbrVJCrWKimSjopVYlCojlZbSg3hXZapaJz2Id+VaddbSg3hX+iw9AsYYY4wxxhhjjA3LOFt8zb5yzixrpsIVhdnfuqS6pH+6XK9VlSRdl9+e+8bYolyGyJb2Vj3q+hjF8eZTcRxHr47Huq7vu/QpPU5/pnT548XYeMuN9Fg9uXJ7ifyOJWCMPt0HStAxxjx3wynYGLetxlCQMdocfo2z4GJMkww97+ExLrsOuBYvA2OydLwFFKNVOp6CirHXKRZMTJFMskBi7GmaBRFj1IRzHxVjJ538mBjbTv1g8DBajXhMRsfYZPIHA4fR2dinS2CM7UY/XuJi9ORLGR7GHo7rwbiR75bIGL19rAfjbj/5lqFhup9YwDDNiPeY6Pi16IA02az3w6bJokfV5bfTP2XSgM+Z55BT5tidM+X+l/T4/8odBlgqbRaxGmMGnP+5lR7l0Py3zG4xlubiszyyJXzDPsq89/8c6yT/Jp35XjJ3+8V8MHpbezDVYiwvjOc2E3eL+Za9MJ63zONhRZj6tCLMrwX9ZMSL2Z2hnvG/zY/ZEyMSMagRgxoxqBGDGjGoEYMaMagRg9oSMdr05LyYres71gitczzzQ0+tB3Nv+478aDs7RftnxycWzz9FqLOfbCj5rvo0+xkVDiMwqxYOk86/EBUOc5mbEhJTzT+rHg6TrAgTtfMvRAfDSKxEBcPcnyvCSKxEB8OkzeyWcJiLwEaUYJjrijBxsiKMxG0mGKa+CewRCIW5Syyrh8LsGoE5gFCYh8QWwVCYi8TfyA2EiasVYSKJ20wojMxWtFAYkQ1PgTC1xJU5FOYusnk7EGYn8tfLA2FEbjNKvTBxX74h9x4oc2VWqsmrpKfKo6l7j0yeQltRne2paHyLTVnRdyzcttoBy4BwY+5tiWuavRGDGjGoEYMaMagRgxoxqBGDGjGoEYMaMagRgxoxqBGDGjGoEYMaMagRgxoxqBGDGjGoEYMaMagRgxoxqBGDGjGoEYMaMagRgxoxqBGDGjGohcfM+E8SAmP0WbXz/QA6MMa1Ki3fNlhfgTFlquL5fs0ZGGPj36kvTcWUXfWMAAAAAElFTkSuQmCC" alt="Facebook"></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAV1BMVEVQq/H///9KqfFBpvA6pPD7/f/3+/5XrvH0+f7I4vrr9P3f7vyLxPVhsvKx1vjS5/uczPZ9vvS83Pnk8fyk0Pd0uvPB3/lntfKWyfbX6vuCwfSs0/gknu+XGQxGAAAG4klEQVR4nO2ca3OrIBCG7YKieL+Cpv//dx6NSZvEaNRdsWeG50Nn2k4Mr8DeuDiOxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWGYAxhjn/Q84uyU4YFAhOl0lSaU7wfvf/ldFwJy8CL8eKIvc+R/lADh54H1N8JpawJye/h/KaCtXARBH4VTJSBjFb+UAiDwIhPHGfoAJ3c5JGWgjwV4/M+gP3K+KpAGzfb/jSXmzJKXHbeqnuQMM6ip1v778mqIZLFOTl7UPcLLyg5ZhrOnft8eYiIrxM4UgEANKhjR9AyJ5M++n+MnY7qFTklSOf5Q5RRt4PzBSCqsJonHXaOmHWt8LwHmcpfLnEwXF9Gf18GoCjlYDTrpOykDDnSr0H/qxJJkxvLi+q4SjH7RBS+90njvR1xTTFuLRKbgX5NN4sEXLKwX6XQ4w7d9e1QVlBViG0RIQRTo/fsFNnP1PZDVGS4r45gdA/fprd7+lB2eFf5nXcg8KgKFMGovkw1OLaaix8jHJSqO8oKVPflSW4Yb6UyvSeJea0bzvpBnGA1xDgdaNMGYILs9PDvM9ZgWK3VL8Sx/ScFBZ00q0UXtthtTb3SfUu2dMmH9z1XeJvPrPFmVQ+wjk9fFeslkNS/ZqkUXSSv/uQD1cqAnijatrN04ciDf5/ln8GGeg37fD15u6m+lVsfInJDYRmXuphdogB3aPsictOTY6ezNnRsrIWftsmlEmO3SkCRNr9kORr+wcyBFO5k6JcjD3lswPkfKiVtk1iBDe/0aIHmMDLxHAE26branbQYXWktYkRYjn2OwVL9Xw+WvQ8z/YF0RNgHq2YDfKaTu+/E2zNmQ1BU0CMFiAj3WusP5ekvPW726hoivbseyzx/P1wtxBWmZ/V2Q71xa1PM5uX5nUc3VPpJiGovT3A1sXvrupVgLeCIIYNcwCZED20pjViZUsonqqB2kAaMVsqhGVRdXF8LKstz8z+xpyW1IxrPY3fLkr0yKrxeOq3uXzp+Yh7pntuZVftkGiFTDe9xEw/ZfEAOzIel1fhkGRdUqwfEvPHi3GYWpnS1zX8/2yxASatKZ5gJOkV7soiKX0MGRIsp+EXgyINXHAEVSko2x0gojSFw6SdZmbkjjT4uoxoCNIfk8Wo1ovyNTg0mExTTsKjyL3v4sZQl6vbbKacZ6fMNJo1pjvYkYz5pdpUeXafN+EJOuyNzHiN0r0fIkvs2yFNM6kqUbuhyz/H1gqNZkgIc0zI0yUiMbL6IzZUFs9yVmOSELLTFAowtESGjPnbAsQ0CYAy/XZg3ETylE2jLPFXYjHQrP95wF2Oc840+zLegDEefYsJd/ozIuzusal2Zj1CMBZJsDHr2NOYNFJYkq6xYxftm1IpKMhH2XOaQPNI1mVncAoVr83Iw86tXFKHIDfsDsDaPOpANWm/TdqjPdNeFTHOM9bT41AmspM1DhmQ4EDO2ZQ861Cc3KqIztmgH1npSFD4Bo4k8UdnRqxBKRlmVkYdEkQkmxUXMCjzmReENcDr4zx728nag5Wc8CC2SMQJ02SXLIqKYogPdgSUNbL3yKC64KrZ8KgHdwxQ6XWWERzeMeYXNcsjjdlvDraht0I1fFigJnpGq86NpIZ4dpINEN0KOsDYGRvg39MtjxVIwyEMoclmK8YqDrhDvxsU3P4CocBS3bn8z5nJNR1/2U1xy6lBSa1HKymJN8q90kN4qDiBzya0xib1PDsGAvt6jMunuF1ekCYhjoJjoBB1VKHNi793tKVAIuv96cQkhr0MFM5SheEy50m4v4lOSDq6EJUeZLmDdlUjyNU3ekCm1H7x5X8twAADO9HiY7I4eGYqwuuuHtvgKAGAHVvyUD5R7SA8+Hs4wq2Hsk/CACFuenjikt1pBRH72kqdLcg7n8hlSIq/MKgX/0BLcB7Kfhgs+zMZfxzShiPk5Igbk7V2bdNMs6ilmTzeXVOyH8HOIeuIYvGDGqBCU5NMOdvNKsv4aBAKRXHYiSOVV4VdHVzN+zw9/JtAFTquzIM27YNQ+JlJrn7Oq7danieHrJW5ge50W65yXE0feHCXXXvxhGwWNNm+m6aidN8C7A4Ityhmer3t/4akwOiIyrIBt25UkY5Trzu0thFkvjdrRQnAAw0qqwU6r90K/sQXFbhnu0Zrhte1IebdszTB2YqKaW/RZAvw0vNT3ArKxjuHdZFW64R5Ppl2+j4jyoZAcacWl+aNJSzRsGTYdokuhb/wWX/MFzGIuoouyTDbq2ylFL6PVKWbRoUySUbLqD5SzP+E3DdSgdC1XWe513Uk+d1HQvn+vf/R8gDt0yHjQrGrMdisVgsFovFYrFYLBaLxWKxWCwWi8Uyxz+5AmBSt/OtLgAAAABJRU5ErkJggg==" alt="Twitter"></a>
+            <a href="#"><img src="data:image/jpeg;base64,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" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
